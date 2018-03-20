@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:paddingBottom="@dimen/activity_spacing"
+            android:id="@+id/my_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/button_proceed_pay"
+            android:scrollbars="vertical"/>
+
+        <Button
+            android:padding="@dimen/activity_padding"
+            android:id="@+id/button_proceed_pay"
+            android:background="@drawable/background_selector"
+            android:text="Proceed to pay"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_exit"/>
+
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="icon_arrow_left">&#xf054;</string>
+    <string name="icon_hand_right">&#xf0a4;</string>
+    <string name="icon_view">&#xf06e;</string>
+    <string name="icon_tree">&#xf1bb;</string>
+    <string name="icon_bell">&#xf0a2;</string>
+    <string name="icon_paypal">&#xf1f4;</string>
+    <string name="icon_rupee">&#xf156;</string>
+    <string name="icon_paytm">&#xf288;</string>
+    <string name="icon_check">&#xf05d;</string>
+    <string name="icon_tree_leaf_single">&#xf18c;</string>
+    <string name="icon_thumb_down">&#xf165; &#xf165; &#xf165; &#xf165;</string>
+    <string name="icon_thumb_up">&#xf164; &#xf164; &#xf164; &#xf164;</string>
+    <string name="icon_ban">&#xf05e;</string>
+    <string name="icon_qr">&#xf029;</string>
+    <string name="icon_upload">&#xf0ee;</string>
+    <string name="icon_close">&#xf00d;</string>
+    <string name="icon_copy">&#xf0ea;</string>
+    <string name="icon_fb">&#xf230;</string>
+    <string name="icon_google">&#xf0d4;</string>
+    <string name="icon_flash">&#xf0e7;</string>
+    <string name="icon_camera">&#xf030;</string>
+</resources>

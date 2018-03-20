@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="greenbharat.cdac.com.greenbharat.activity.Home"
+    tools:showIn="@layout/app_bar_home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGrey"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_header_banner_fix_height" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/component_space"
+            android:weightSum="10">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_margin="@dimen/component_space"
+                android:layout_weight="5"
+                android:background="@color/colorWhite"
+                card_view:cardCornerRadius="2dp">
+
+                <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+                    android:id="@+id/plant_adopt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    fancy:fb_defaultColor="@android:color/transparent"
+                    fancy:fb_focusColor="@color/colorPrimary"
+                    fancy:fb_text="">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_above="@+id/tv"
+                            android:padding="@dimen/activity_vertical_margin"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/tree_plant" />
+
+                        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                            style="@style/Base.TextAppearance.AppCompat.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:textColor="@color/colorAccent"
+                            android:text="पेड़\nलगाओं" />
+
+                        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                            android:id="@+id/tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/tvv"
+                            android:layout_centerHorizontal="true"
+                            android:text="Plantation"
+                            android:gravity="center"
+                            android:textColor="#000" />
+
+                        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                            android:id="@+id/tvv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="वृक्षारोपण"
+                            android:gravity="center"
+                            android:textColor="#000" />
+                    </RelativeLayout>
+                </greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_margin="@dimen/component_space"
+                android:layout_weight="5"
+                android:background="@color/colorWhite"
+                card_view:cardCornerRadius="2dp">
+
+                <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+                    android:id="@+id/track_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    fancy:fb_defaultColor="@android:color/transparent"
+                    fancy:fb_focusColor="@color/colorPrimary"
+                    fancy:fb_text="">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                            style="@style/Base.TextAppearance.AppCompat.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:textColor="@color/colorAccent"
+                            android:text="Track\nPlant" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_above="@+id/tvv1"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/tree_growth"
+                            android:padding="@dimen/activity_vertical_margin"/>
+
+                        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                            android:id="@+id/tvv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/tv1"
+                            android:layout_centerHorizontal="true"
+                            android:text="Your Tree Growth"
+                            android:gravity="center"
+                            android:textColor="#000" />
+
+                        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                            android:id="@+id/tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="आपका वृक्ष"
+                            android:gravity="center"
+                            android:textColor="#000" />
+                    </RelativeLayout>
+                </greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/component_space"
+            android:paddingLeft="@dimen/component_space"
+            android:paddingRight="@dimen/component_space"
+            android:weightSum="10">
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_margin="@dimen/component_space"
+                android:layout_weight="5"
+                card_view:cardCornerRadius="2dp">
+
+                <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+                    android:id="@+id/register_space"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    fancy:fb_defaultColor="@android:color/transparent"
+                    fancy:fb_focusColor="@color/colorPrimary"
+                    fancy:fb_text="">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                            style="@style/Base.TextAppearance.AppCompat.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:textColor="@color/colorAccent"
+                            android:text="For\nTree" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_above="@+id/tvv3"
+                            android:padding="@dimen/activity_vertical_margin"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/register_space" />
+
+                        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                            android:id="@+id/tvv3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/tv3"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:text="Land Registration"
+                            android:textColor="#000" />
+
+                        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                            android:id="@+id/tv3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="भूमी पंजीकरण"
+                            android:gravity="center"
+                            android:textColor="#000" />
+                    </RelativeLayout>
+                </greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_margin="@dimen/component_space"
+                android:layout_weight="5"
+                card_view:cardCornerRadius="2dp">
+
+                <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+                    android:id="@+id/donate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    fancy:fb_defaultColor="@android:color/transparent"
+                    fancy:fb_focusColor="@color/colorPrimary"
+                    fancy:fb_text="">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/activity_vertical_margin"
+                            android:layout_above="@+id/tvv4"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/donate" />
+
+                        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                            android:id="@+id/tvv4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/tv4"
+                            android:layout_centerHorizontal="true"
+                            android:text="Donate a Plant"
+                            android:gravity="center"
+                            android:textColor="#000" />
+
+                        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                            android:id="@+id/tv4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="वृक्ष दान"
+                            android:gravity="center"
+                            android:textColor="#000" />
+                    </RelativeLayout>
+                </greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_margin="@dimen/component_space"
+                android:layout_weight="5"
+                card_view:cardCornerRadius="2dp">
+
+                <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+                    android:id="@+id/plants"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    fancy:fb_defaultColor="@android:color/transparent"
+                    fancy:fb_focusColor="@color/colorPrimary"
+                    fancy:fb_text="">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_above="@+id/tvv5"
+                            android:padding="@dimen/activity_vertical_margin"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/tree_friend" />
+
+                        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                            android:id="@+id/tvv5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/tv5"
+                            android:layout_centerHorizontal="true"
+                            android:text="Nature Lover"
+                            android:gravity="center"
+                            android:textColor="#000" />
+
+                        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                            android:id="@+id/tv5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="प्रकृति प्रेमी"
+                            android:gravity="center"
+                            android:textColor="#000" />
+                    </RelativeLayout>
+                </greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/component_space"
+            android:paddingRight="@dimen/component_space"
+            android:weightSum="10">
+
+
+            <android.support.v7.widget.CardView
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_margin="@dimen/component_space"
+                android:layout_weight="5"
+                android:background="@color/colorWhite"
+                card_view:cardCornerRadius="2dp">
+
+                <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+                    android:id="@+id/how_work"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    fancy:fb_defaultColor="@android:color/transparent"
+                    fancy:fb_focusColor="@color/colorPrimary"
+                    fancy:fb_text="">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_above="@+id/tvv2"
+                            android:padding="@dimen/activity_vertical_margin"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/working_process" />
+
+                        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                            android:id="@+id/tvv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/tv2"
+                            android:layout_centerHorizontal="true"
+                            android:text="Working Process"
+                            android:gravity="center"
+                            android:textColor="#000" />
+
+                        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                            android:id="@+id/tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="कार्यशैली"
+                            android:gravity="center"
+                            android:textColor="#000" />
+                    </RelativeLayout>
+                </greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_margin="@dimen/component_space"
+                android:layout_weight="5"
+                card_view:cardCornerRadius="2dp">
+
+                <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+                    android:id="@+id/register_space"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    fancy:fb_defaultColor="@android:color/transparent"
+                    fancy:fb_focusColor="@color/colorPrimary"
+                    fancy:fb_text="">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                            style="@style/Base.TextAppearance.AppCompat.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:textColor="@color/colorAccent"
+                            android:text="For\nTree" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_above="@+id/tvv3"
+                            android:padding="@dimen/activity_vertical_margin"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/register_space" />
+
+                        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                            android:id="@+id/tvv3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/tv3"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:text="Land Registration"
+                            android:textColor="#000" />
+
+                        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                            android:id="@+id/tv3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="भूमी पंजीकरण"
+                            android:gravity="center"
+                            android:textColor="#000" />
+                    </RelativeLayout>
+                </greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>-->
+
+    </LinearLayout>
+</ScrollView>

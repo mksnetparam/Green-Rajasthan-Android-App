@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/llbtn"
+        tools:context="greenbharat.cdac.com.greenbharat.activity.LoginSignUp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="?android:attr/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/textShare"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Green Rajasthan"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/textShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_share_white_24dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:onClick="shareText"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:text="SHARE"
+                    android:textColor="#fff" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <include layout="@layout/layout_header_banner"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+            android:id="@+id/button_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="register"
+            android:padding="@dimen/activity_padding"
+            fancy:fb_defaultColor="@color/colorPrimary"
+            fancy:fb_focusColor="@color/cb_dark_grey"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            fancy:fb_radius="50dp"
+            fancy:fb_text="New User? Register here"
+            fancy:fb_textColor="@color/colorWhite" />
+
+
+        <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_padding"
+            android:onClick="login"
+            android:padding="@dimen/activity_padding"
+            fancy:fb_defaultColor="@color/colorAccent"
+            fancy:fb_focusColor="@color/cb_dark_grey"
+            fancy:fb_radius="50dp"
+            fancy:fb_text="Existing User? Login here"
+            fancy:fb_textColor="@color/colorWhite" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_margin="10dp">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/text"
+                android:background="@color/colorDarkGrey" />
+
+            <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:text="OR CONNECT WITH" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text"
+                android:background="@color/colorDarkGrey" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_weight="1">
+
+                <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="facebookLogin"
+                    android:padding="@dimen/activity_padding"
+                    fancy:fb_defaultColor="#3b5998"
+                    fancy:fb_focusColor="@color/colorWhite"
+                    fancy:fb_fontIconResource="@string/icon_fb"
+                    fancy:fb_iconPaddingRight="@dimen/activity_vertical_margin"
+                    fancy:fb_iconPosition="left"
+                    fancy:fb_radius="50dp"
+                    fancy:fb_text="Facebook"
+                    fancy:fb_textColor="@color/colorWhite" />
+
+
+                <ProgressBar
+                    android:id="@+id/pbFacebook"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_weight="1">
+
+                <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="googleLogin"
+                    android:padding="@dimen/activity_padding"
+                    fancy:fb_defaultColor="#d62d20"
+                    fancy:fb_focusColor="@color/colorWhite"
+                    fancy:fb_fontIconResource="@string/icon_google"
+                    fancy:fb_iconPaddingRight="@dimen/activity_vertical_margin"
+                    fancy:fb_iconPosition="left"
+                    fancy:fb_radius="50dp"
+                    fancy:fb_text="Google"
+                    fancy:fb_textColor="@color/colorWhite" />
+
+
+                <ProgressBar
+                    android:id="@+id/pbGoogle"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

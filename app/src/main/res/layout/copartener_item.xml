@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/activity_spacing"
+    android:layout_marginRight="@dimen/activity_spacing"
+    android:layout_marginTop="@dimen/activity_spacing"
+    android:elevation="20dp"
+    card_view:cardCornerRadius="2dp">
+
+    <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+        android:id="@+id/fancy_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        fancy:fb_defaultColor="@android:color/transparent"
+        fancy:fb_focusColor="@color/colorPrimary"
+        fancy:fb_text="">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="@dimen/activity_spacing"
+                android:layout_weight="4"
+                android:scaleType="centerCrop"
+                android:src="@drawable/plant" />
+
+            <TableLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:paddingLeft="@dimen/activity_spacing"
+                android:paddingTop="@dimen/activity_spacing"
+                android:shrinkColumns="1"
+                android:stretchColumns="*">
+
+                <!-- Row 1 with single column -->
+                <TableRow>
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textColor="@color/textTitleColor"
+                        android:textStyle="bold" />
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:id="@+id/nameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+
+                <!-- Row 1 with single column -->
+                <TableRow
+                    android:paddingBottom="@dimen/com_space"
+                    android:paddingTop="@dimen/com_space">
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Referred Plants  "
+                        android:textColor="@color/textTitleColor"
+                        android:textStyle="bold" />
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:id="@+id/totalReferedPlantsTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <!-- Row 1 with single column -->
+                <TableRow android:paddingBottom="@dimen/com_space">
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Plants"
+                        android:textColor="@color/textTitleColor"
+                        android:textStyle="bold" />
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:id="@+id/totalPlantsTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <!-- Row 1 with single column -->
+                <TableRow>
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Referral Code"
+                        android:textColor="@color/textTitleColor"
+                        android:textStyle="bold" />
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:id="@+id/referenceNoTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/four" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton>
+
+</android.support.v7.widget.CardView>

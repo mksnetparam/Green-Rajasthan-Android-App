@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo_gb"
+        android:visibility="gone" />
+
+
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/selector_textview"
+        android:drawableLeft="@drawable/ic_phone_24dp"
+        android:drawablePadding="@dimen/com_space"
+        android:hint="Mobile/मोबाइल नं. "
+        android:inputType="number"
+        android:maxLength="10"
+        android:padding="@dimen/activity_padding"
+        android:singleLine="true" />
+
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/selector_textview"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="@dimen/com_space"
+        android:hint="Password/पासवर्ड"
+        android:inputType="textPassword"
+        android:padding="@dimen/activity_padding"
+        android:singleLine="true" />
+
+
+    <!--    <Button
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="Login"
+            />-->
+
+    <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:padding="@dimen/activity_vertical_margin"
+        fancy:fb_defaultColor="@color/colorAccent"
+        fancy:fb_focusColor="@color/colorPrimary"
+        fancy:fb_text="Login/लोग इन "
+        fancy:fb_textColor="@color/colorWhite" />
+
+    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewRegular
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/back_selector"
+        android:text="Forgot Password?" />
+
+    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewRegular
+        android:id="@+id/registerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="@dimen/com_space"
+        android:background="@drawable/back_selector"
+        android:clickable="true"
+        android:textColor="@color/colorBlack"
+        android:padding="@dimen/com_space"
+        android:text="Don't have an account? Sign up" />
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+
+        <ViewFlipper
+            android:id="@+id/viewFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/b_img1"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/b_img2"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/b_img3"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/b_img4"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"/>
+
+        </ViewFlipper>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/lin_lay_banner"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorGreen"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="@dimen/component_size"
+            android:layout_height="@dimen/component_size"
+            android:layout_margin="5dp"
+            android:src="@drawable/logo_gb" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                android:layout_width="match_parent"
+                android:id="@+id/tv"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/welcome"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:lineSpacingMultiplier="1.2"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:freezesText="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/activity_horizontal_margin" />
+
+            <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/welcome_hindi"
+                android:textColor="@color/colorWhite"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

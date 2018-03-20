@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+
+            <ImageView
+                android:id="@+id/land_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/plant_wall_blur" />
+
+            <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewFontAwesome
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="bottom|right"
+                android:onClick="selectLandImage"
+                android:padding="5dp"
+                android:text="@string/icon_camera"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+
+            <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorDarkGrey"
+                android:padding="@dimen/activity_padding"
+                android:text="Click here to select land image"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorWhite" />
+
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/input_land_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/selector_textview"
+            android:hint="Enter your name"
+            android:singleLine="true"
+            android:padding="@dimen/activity_padding" />
+
+        <EditText
+            android:id="@+id/input_land_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/selector_textview"
+            android:hint="Enter your mobile number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:padding="@dimen/activity_padding" />
+
+        <EditText
+            android:id="@+id/input_land_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/selector_textview"
+            android:hint="Land area for plantation"
+            android:inputType="numberDecimal"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:padding="@dimen/activity_padding" />
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/land_area_unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:hint="Select Land Area Unit"
+            fancy:met_floatingLabel="normal" />
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/land_water_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:hint="जमीन पर पानी की स्तिथि"
+            fancy:met_floatingLabel="normal" />
+
+
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/input_plant_capacity_qty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/selector_textview"
+            android:hint="कितने पेड़ लगाना चाहते है?"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:padding="@dimen/activity_padding" />
+
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/soil_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:hint="Select Soil Type*"
+            android:visibility="gone"
+            fancy:met_floatingLabel="normal" />
+
+
+        <EditText
+            android:id="@+id/input_soil_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/selector_textview"
+            android:hint="Soil Details*"
+            android:maxLines="3"
+            android:padding="@dimen/activity_padding"
+            android:visibility="gone" />
+
+
+        <EditText
+            android:id="@+id/input_land_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/selector_textview"
+            android:drawableLeft="@drawable/ic_location_on_24dp"
+            android:drawablePadding="@dimen/activity_padding"
+            android:hint="Address/पता"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:padding="@dimen/activity_padding" />
+
+        <EditText
+            android:id="@+id/spinnerCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/selector_textview"
+            android:cursorVisible="true"
+            android:drawableRight="@drawable/down_arrow"
+            android:focusable="false"
+            android:hint="Select Country"
+            android:inputType="none"
+            android:padding="@dimen/activity_padding"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/spinnerState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/selector_textview"
+            android:drawableRight="@drawable/down_arrow"
+            android:editable="false"
+            android:focusable="false"
+            android:hint="Select State"
+            android:padding="@dimen/activity_padding"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/spinnerCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/selector_textview"
+            android:drawableRight="@drawable/down_arrow"
+            android:editable="false"
+            android:focusable="false"
+            android:hint="Select City"
+            android:padding="@dimen/activity_padding"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/input_dist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/selector_textview"
+            android:hint="District*"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:padding="@dimen/activity_padding"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/input_tehsil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/selector_textview"
+            android:hint="Tehsil*"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:padding="@dimen/activity_padding"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+            <EditText
+                android:id="@+id/input_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_textview"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:drawableLeft="@drawable/ic_location_on_24dp"
+                android:drawablePadding="@dimen/component_space"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Select Location in Map"
+                android:onClick="selectLocation"
+                android:padding="@dimen/activity_padding"
+                android:tag="" />
+
+            <ProgressBar
+                android:id="@+id/pb"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:visibility="gone" />
+
+            <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+                android:id="@+id/button_cross"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="2dp"
+                android:padding="@dimen/com_space"
+                android:visibility="gone"
+                fancy:fb_defaultColor="@color/colorAccent"
+                fancy:fb_focusColor="@color/focus_color"
+                fancy:fb_radius="50dp"
+                fancy:fb_text="x"
+                fancy:fb_textColor="@color/colorWhite" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+
+            <CheckBox
+                android:id="@+id/checkbox_registerspace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="आप किस संस्था से वृक्षारोपण के लिए जुड़ना चाहेंगे?" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/spinnerOrganization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/selector_textview"
+            android:drawableRight="@drawable/down_arrow"
+            android:editable="false"
+            android:focusable="false"
+            android:hint="Select Organization/संस्था का चयन करे"
+            android:padding="@dimen/activity_padding"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+            android:id="@+id/button_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:padding="@dimen/activity_vertical_margin"
+            fancy:fb_defaultColor="@color/colorAccent"
+            fancy:fb_focusColor="@color/colorPrimary"
+            fancy:fb_text="Register Land"
+            fancy:fb_textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+</ScrollView>

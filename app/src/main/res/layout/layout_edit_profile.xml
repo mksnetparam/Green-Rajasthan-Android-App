@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+
+        <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_pic_edit"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/component_space"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="selectImage"
+                android:transitionName="simple_activity_transition"
+                tools:ignore="UnusedAttribute" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectImage"
+                android:src="@drawable/ic_camera_alt_black_24dp"
+                app:elevation="8dp"
+                app:fabSize="normal"
+                app:layout_anchor="@id/profile_pic_edit"
+                app:layout_anchorGravity="center_vertical|end" />
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/selector_textview"
+            android:drawableLeft="@drawable/user_name"
+            android:drawablePadding="@dimen/activity_padding"
+            android:hint="Name/नाम"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:padding="@dimen/activity_padding" />
+        <!--
+
+                    <EditText
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:id="@+id/input_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:hint="Mobile/मोबाइल नं"
+                        android:inputType="number"
+                        android:drawablePadding="@dimen/activity_padding"
+                        android:drawableLeft="@drawable/ic_phone_24dp"
+                        android:background="@drawable/selector_textview"
+                        android:padding="@dimen/activity_padding"
+                        />
+        -->
+
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/selector_textview"
+            android:drawableLeft="@drawable/ic_email_24dp"
+            android:drawablePadding="@dimen/activity_padding"
+            android:hint="Email/ईमेल"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="@dimen/activity_padding" />
+
+        <EditText
+            android:id="@+id/input_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/selector_textview"
+            android:drawableLeft="@drawable/ic_location_on_24dp"
+            android:drawablePadding="@dimen/activity_padding"
+            android:hint="Address/पता"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:padding="@dimen/activity_padding" />
+
+
+        <EditText
+            android:id="@+id/spinnerCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/selector_textview"
+            android:drawableRight="@drawable/down_arrow"
+            android:editable="false"
+            android:focusable="false"
+            android:hint="Select Country"
+            android:maxLines="1"
+            android:padding="@dimen/activity_padding"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/spinnerState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/selector_textview"
+            android:drawableRight="@drawable/down_arrow"
+            android:editable="false"
+            android:focusable="false"
+            android:hint="Select State"
+            android:maxLines="1"
+            android:padding="@dimen/activity_padding"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/spinnerCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/selector_textview"
+            android:drawableRight="@drawable/down_arrow"
+            android:editable="false"
+            android:focusable="false"
+            android:hint="Select City"
+            android:maxLines="1"
+            android:padding="@dimen/activity_padding"
+            android:textSize="15sp" />
+
+
+        <!--   <Button
+               android:layout_marginTop="@dimen/activity_horizontal_margin"
+               android:id="@+id/button_register"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Register"
+               android:textColor="#fff"
+               android:background="@color/colorAccent"/>-->
+
+
+        <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+            android:id="@+id/button_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:padding="@dimen/activity_vertical_margin"
+            fancy:fb_defaultColor="@color/colorAccent"
+            fancy:fb_text="Update/अपडेट करे "
+            fancy:fb_textColor="@color/colorWhite" />
+
+
+    </LinearLayout>
+
+</ScrollView>

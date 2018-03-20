@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.qrcode.QRCodeActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <me.dm7.barcodescanner.zxing.ZXingScannerView
+            android:id="@+id/scanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></me.dm7.barcodescanner.zxing.ZXingScannerView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_padding">
+
+            <EditText
+                android:id="@+id/input_tree_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/button_go"
+                android:background="@drawable/selector_textview"
+                android:hint="Enter tree number"
+                android:inputType="number"
+                android:padding="@dimen/activity_padding"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:textColorHint="#b0ffffff"
+                android:textColor="@color/white"/>
+
+            <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+                android:id="@+id/button_go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/five"
+                android:onClick="done"
+                android:padding="@dimen/activity_padding"
+                fancy:fb_defaultColor="@color/colorAccent"
+                fancy:fb_focusColor="@color/colorGreen"
+                fancy:fb_iconColor="@color/colorWhite"
+                fancy:fb_text="  Go  " />
+        </RelativeLayout>
+
+        <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:onClick="flash"
+            android:padding="@dimen/activity_vertical_margin"
+            fancy:fb_defaultColor="#b8ffffff"
+            fancy:fb_focusColor="@color/colorGreen"
+            fancy:fb_fontIconResource="@string/icon_flash"
+            fancy:fb_iconColor="@color/colorWhite"
+            fancy:fb_radius="50dp" />
+
+    </RelativeLayout>
+</LinearLayout>

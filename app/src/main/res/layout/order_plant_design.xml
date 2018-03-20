@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/enquiry_generalmargin"
+    android:layout_marginLeft="@dimen/enquiry_generalmargin"
+    android:layout_marginRight="@dimen/enquiry_generalmargin"
+    android:layout_marginTop="@dimen/enquiry_generalmargin"
+    android:elevation="20dp"
+    android:foreground="@drawable/back_selector"
+    card_view:cardCornerRadius="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+            android:id="@+id/btn_order_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            fancy:fb_defaultColor="@android:color/transparent"
+            fancy:fb_focusColor="@color/colorPrimary"
+            fancy:fb_text="">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/com_space"
+                android:shrinkColumns="1"
+                android:stretchColumns="1">
+
+                <TableRow>
+
+                    <LinearLayout
+                        android:layout_span="2"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/lin_lay_planted"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/round_corner_shape"
+                                android:padding="5dp"
+                                android:visibility="invisible">
+
+                                <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewFontAwesome
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/icon_tree_leaf_single"
+                                    android:textColor="@color/colorAccent" />
+
+                                <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Planted"
+                                    android:textColor="@color/colorAccent"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                            android:id="@+id/orderNumber"
+                            style="@style/Base.TextAppearance.AppCompat.Large"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/com_space"
+                            android:text="Order No"
+                            android:textColor="@color/textTitleColor"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow android:padding="@dimen/com_space">
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/com_space"
+                        android:text="No. of Plants"
+                        android:textColor="@color/textTitleColor"
+                        android:textStyle="bold" />
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:id="@+id/numberPlant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/activity_vertical_margin"
+                        android:text="111" />
+
+                </TableRow>
+
+                <TableRow android:padding="@dimen/com_space">
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/com_space"
+                        android:text="Date"
+                        android:textColor="@color/textTitleColor"
+                        android:textStyle="bold" />
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/activity_vertical_margin"
+                        android:text="111" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tbl_row_status"
+                    android:padding="@dimen/com_space">
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/com_space"
+                        android:text="Order Status"
+                        android:textColor="@color/textTitleColor"
+                        android:textStyle="bold" />
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:id="@+id/status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/activity_vertical_margin"
+                        android:text="dfdf"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow android:padding="@dimen/com_space">
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/com_space"
+                        android:text="Payment Status"
+                        android:textColor="@color/textTitleColor"
+                        android:textStyle="bold" />
+
+                    <LinearLayout android:orientation="vertical">
+
+                        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                            android:id="@+id/payment_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/activity_vertical_margin"
+                            android:paddingTop="5dp"
+                            android:text="dfdf"
+                            android:textStyle="bold" />
+
+                        <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+                            android:id="@+id/lin_lay_payment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_vertical_margin"
+                            android:padding="@dimen/com_space"
+                            fancy:fb_defaultColor="@color/colorRed"
+                            fancy:fb_focusColor="@color/focus_color"
+                            fancy:fb_fontIconResource="@string/icon_paypal"
+                            fancy:fb_text="Pay Now"
+                            fancy:fb_textColor="@color/colorWhite" />
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow android:padding="@dimen/com_space">
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/com_space"
+                        android:text="Payment Due On"
+                        android:textColor="@color/textTitleColor"
+                        android:textStyle="bold" />
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:id="@+id/due_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/activity_vertical_margin"
+                        android:text="dfdf"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow android:padding="@dimen/com_space">
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/com_space"
+                        android:text="Dedicated to"
+                        android:textColor="@color/textTitleColor"
+                        android:textStyle="bold" />
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:id="@+id/nominee_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/activity_vertical_margin"
+                        android:text="ram ji"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+            </TableLayout>
+        </greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+                android:id="@+id/button_view_land"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/com_space"
+                fancy:fb_defaultColor="@color/colorAccent"
+                fancy:fb_focusColor="@color/colorPrimary"
+                fancy:fb_fontIconResource="@string/icon_view"
+                fancy:fb_text="View Order"
+                fancy:fb_textColor="@color/colorWhite" />
+
+            <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+                android:id="@+id/button_alloted_trees"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/com_space"
+                fancy:fb_defaultColor="@color/colorPrimary"
+                fancy:fb_focusColor="@color/colorAccent"
+                fancy:fb_fontIconResource="@string/icon_tree"
+                fancy:fb_text="View Plants"
+                fancy:fb_textColor="@color/colorWhite" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

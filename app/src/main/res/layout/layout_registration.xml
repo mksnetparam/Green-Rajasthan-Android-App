@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/profile"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/selector_textview"
+        android:drawableLeft="@drawable/user_name"
+        android:drawablePadding="@dimen/activity_padding"
+        android:hint="Name/नाम"
+        android:inputType="textCapWords"
+        android:maxLines="1"
+        android:padding="@dimen/activity_padding" />
+
+
+    <EditText
+        android:id="@+id/input_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/selector_textview"
+        android:drawableLeft="@drawable/ic_phone_24dp"
+        android:drawablePadding="@dimen/activity_padding"
+        android:hint="Mobile/मोबाइल नं"
+        android:inputType="number"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:padding="@dimen/activity_padding" />
+
+
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/selector_textview"
+        android:drawableLeft="@drawable/ic_email_24dp"
+        android:drawablePadding="@dimen/activity_padding"
+        android:hint="Email/ईमेल"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:padding="@dimen/activity_padding"/>
+
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/selector_textview"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="@dimen/activity_padding"
+        android:hint="Password/पासवर्ड"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="@dimen/activity_padding" />
+
+
+    <EditText
+        android:id="@+id/input_confirmpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/selector_textview"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="@dimen/activity_padding"
+        android:hint="Confirm Password/पासवर्ड निश्चित करे"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="@dimen/activity_padding" />
+
+    <EditText
+        android:id="@+id/spinnerCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/down_arrow"
+        android:editable="false"
+        android:maxLines="1"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/selector_textview"
+        android:padding="@dimen/activity_padding"
+        android:focusable="false"
+        android:hint="Select Country"
+        />
+
+    <EditText
+        android:id="@+id/spinnerState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/down_arrow"
+        android:editable="false"
+        android:maxLines="1"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/selector_textview"
+        android:padding="@dimen/activity_padding"
+        android:focusable="false"
+        android:hint="Select State"
+        />
+
+
+    <EditText
+        android:id="@+id/spinnerCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/down_arrow"
+        android:editable="false"
+        android:maxLines="1"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/selector_textview"
+        android:padding="@dimen/activity_padding"
+        android:focusable="false"
+        android:hint="Select City"
+        />
+
+
+    <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+        android:id="@+id/button_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:padding="@dimen/activity_vertical_margin"
+        fancy:fb_defaultColor="@color/colorAccent"
+        fancy:fb_focusColor="@color/colorAccentDark"
+        fancy:fb_text="Sign up/दर्ज करे "
+        fancy:fb_textColor="@color/colorWhite" />
+
+    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewRegular
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/back_selector"
+        android:padding="@dimen/activity_vertical_margin"
+        android:text="Already Registered ? Login Here"
+        android:textColor="#000" />
+
+</LinearLayout>

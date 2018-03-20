@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_padding">
+
+
+    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/activity_padding"
+        android:text="OTP Confirmation"
+        android:textColor="@color/colorBlack"
+        android:textSize="25dp" />
+
+    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_spacing"
+        android:paddingRight="@dimen/activity_spacing"
+        android:paddingTop="@dimen/activity_spacing"
+        android:text="@string/msg_sit_back"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/edit_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_textview"
+        android:hint="  Enter OTP"
+        android:inputType="number"
+        android:padding="@dimen/activity_padding" />
+
+    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+        android:id="@+id/text_resent_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/activity_spacing"
+        android:layout_marginTop="@dimen/activity_spacing"
+        android:background="@drawable/back_selector"
+        android:padding="@dimen/activity_spacing"
+        android:text="@string/resent_otp"
+        android:textColor="@color/colorGreen" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+            android:id="@+id/button_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:padding="10dp"
+            fancy:fb_defaultColor="@color/colorAccent"
+            fancy:fb_focusColor="@color/tab_background_selected"
+            fancy:fb_text="Submit"
+            fancy:fb_textColor="@color/colorWhite" />
+
+
+        <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+            android:id="@+id/button_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_padding"
+            android:layout_weight="5"
+            android:padding="10dp"
+            fancy:fb_borderColor="@color/colorAccent"
+            fancy:fb_borderWidth="2dp"
+            fancy:fb_defaultColor="@color/colorGrey"
+            fancy:fb_focusColor="@color/colorDarkGrey"
+            fancy:fb_text="Cancel"
+            fancy:fb_textColor="@color/colorAccent" />
+
+
+        <!--       <Button
+                   android:text="Cancel"
+                   android:layout_weight="5"
+                   android:layout_width="0dp"
+                   android:textColor="@color/colorGreen"
+                   android:background="@drawable/selector_textview"
+                   android:layout_height="wrap_content" />-->
+
+    </LinearLayout>
+
+</LinearLayout>

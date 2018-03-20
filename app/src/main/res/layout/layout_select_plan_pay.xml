@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frame_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/activity_background"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:elevation="20dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPadding="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/activity_padding"
+                        android:paddingTop="@dimen/activity_padding"
+                        android:text="@string/how_many_plant"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/input_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_textview"
+                        android:hint="Enter tree number / पेडो की संख्या लिखें"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:padding="@dimen/activity_padding"
+                        android:singleLine="true"
+                        android:textSize="15dp" />
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/activity_padding"
+                        android:paddingTop="@dimen/activity_padding"
+                        android:text="किसके नाम से पेड़ लगाना चाहते है ?"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/name_nominiee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/com_space"
+                        android:background="@drawable/selector_textview"
+                        android:hint="On the name of"
+                        android:inputType="textCapWords"
+                        android:maxLines="1"
+                        android:padding="@dimen/activity_padding"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:elevation="20dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPadding="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/activity_padding"
+                        android:text="@string/contribution"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:id="@+id/text_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.2"
+                        android:padding="@dimen/activity_spacing"
+                        android:text="Tree cost(free) + Fertilizer/Water + Maintainance + Safety/Security " />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:elevation="20dp"
+                card_view:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/activity_padding"
+                        android:paddingLeft="@dimen/activity_spacing"
+                        android:paddingTop="@dimen/activity_padding"
+                        android:text="@string/text_plant_mode"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/activity_spacing"
+                        android:weightSum="10">
+
+                        <RadioButton
+                            android:id="@+id/radio_monthly"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:visibility="gone"
+                            android:buttonTint="@color/colorGreen"
+                            android:padding="@dimen/activity_padding"
+                            android:text="Monthly/प्रतिमाह" />
+                        <!-- <TextView
+                             android:layout_weight="4"
+                             android:padding="@dimen/activity_padding"
+                             android:layout_width="0dp"
+                             android:layout_height="wrap_content"
+                             android:text="Monthly"/>-->
+                        <RadioButton
+                            android:visibility="gone"
+                            android:id="@+id/radio_quaterly"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:buttonTint="@color/colorGreen"
+                            android:padding="@dimen/activity_padding"
+                            android:text="Quarterly/त्रैमासिक" />
+                        <!--<TextView
+                            android:layout_weight="4"
+                            android:padding="@dimen/activity_padding"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Quaterly"/>-->
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.25dp"
+                        android:background="@android:color/darker_gray" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.25dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:padding="@dimen/activity_spacing"
+                        android:weightSum="10">
+
+                        <RadioButton
+                            android:id="@+id/radio_half_yearly"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="5"
+                            android:layout_gravity="center"
+                            android:buttonTint="@color/colorGreen"
+                            android:padding="@dimen/activity_padding"
+                            android:text="Half Yearly/अर्धवार्षिक" />
+
+
+                        <!-- <TextView
+                             android:layout_weight="4"
+                             android:padding="@dimen/activity_padding"
+                             android:layout_width="0dp"
+                             android:layout_height="wrap_content"
+                             android:text="Half Yearly"/>-->
+
+                        <RadioButton
+                            android:id="@+id/radio_yearly"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="5"
+                            android:layout_gravity="center"
+                            android:buttonTint="@color/colorGreen"
+                            android:padding="@dimen/activity_padding"
+                            android:text="Yearly/वार्षिक" />
+
+
+                        <!-- <TextView
+                             android:layout_weight="4"
+                             android:padding="@dimen/activity_padding"
+                             android:layout_width="0dp"
+                             android:layout_height="wrap_content"
+                             android:text="Yearly"/>-->
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.25dp"
+                        android:background="@android:color/darker_gray" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.25dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/activity_spacing"
+                        android:weightSum="10">
+
+
+                        <RadioButton
+                            android:id="@+id/radio_one_time"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="10"
+                            android:buttonTint="@color/colorGreen"
+                            android:padding="@dimen/activity_padding"
+                            android:text="One Time (3 Year)/तीन वर्षों के लिए" />
+
+
+                        <!--    <TextView
+                                android:layout_weight="9"
+                                android:padding="@dimen/activity_padding"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="One Time (5 Year)"/>-->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                card_view:contentPadding="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/activity_padding"
+                        android:text="Total amount"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/rupee" />
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:id="@+id/text_amount"
+                        style="@style/Base.TextAppearance.AppCompat.Large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/activity_padding"
+                        android:text="0"
+                        android:textColor="@color/colorBlack" />
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/activity_padding"
+                        android:text="In INR"
+                        android:textColor="@color/colorBlack" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                card_view:contentPadding="2dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp">
+
+                    <EditText
+                        android:id="@+id/input_organization"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/down_arrow"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:gravity="top"
+                        android:hint="Select Organization/संस्था का चयन करे"
+                        android:onClick="selectCategory"
+                        android:padding="5dp"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </android.support.design.widget.TextInputLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                card_view:contentPadding="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/activity_spacing">
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/activity_spacing"
+                        android:paddingRight="@dimen/activity_spacing"
+                        android:paddingTop="@dimen/activity_spacing"
+                        android:text="किसके reference से पेड़ लगाना चाहते है ?"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/referal_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/com_space"
+                        android:background="@drawable/selector_textview"
+                        android:hint="Enter referral code( if Any)"
+                        android:inputType="textCapCharacters"
+                        android:maxLines="1"
+                        android:padding="@dimen/activity_padding"
+                        android:singleLine="true"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:elevation="20dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPadding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/activity_padding"
+                        android:paddingTop="@dimen/activity_padding"
+                        android:text="@string/plan_features"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/component_space"
+                            android:paddingLeft="@dimen/component_space"
+                            android:text="⚘ यह प्रकृति के प्रति आपका अमुल्य योगदान है |" />
+
+                        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/component_space"
+                            android:text="⚘ आपका यह प्रयास देश में रोजगार बढ़ाने एवं प्रकृति संतुलन में आवश्यक कदम होगा | " />
+
+                        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/component_space"
+                            android:text="⚘ आपका यह प्रयास आने वाली पीढ़ियो के लिए स्वच्छ वातावरण तैयार करेगा |" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/checkboxTerms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I have read and accept " />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:onClick="goToHowWeWork"
+                    android:paddingBottom="@dimen/five"
+                    android:paddingRight="@dimen/five"
+                    android:paddingTop="@dimen/five"
+                    android:text="@string/rule"
+                    android:textColor="@color/colorAccent" />
+
+            </LinearLayout>
+
+            <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+                android:id="@+id/button_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/five"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_marginRight="@dimen/five"
+                android:layout_marginTop="@dimen/com_space"
+                android:padding="@dimen/activity_vertical_margin"
+                fancy:fb_defaultColor="@color/colorAccent"
+                fancy:fb_focusColor="@color/colorPrimary"
+                fancy:fb_iconPosition="right"
+                fancy:fb_iconResource="@drawable/ic_exit"
+                fancy:fb_text="Pay Now"
+                fancy:fb_textColor="@color/colorWhite" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

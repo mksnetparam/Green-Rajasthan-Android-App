@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:orientation="vertical"
+    tools:context="greenbharat.cdac.com.greenbharat.activity.SelectPaymentMode">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        card_view:cardCornerRadius="2dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:stretchColumns="1">
+
+
+            <TableRow
+                android:visibility="gone"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:onClick="payOnline">
+
+
+                <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewFontAwesome
+                    style="@style/Base.TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/activity_vertical_margin"
+                    android:text="@string/icon_paypal"
+                    android:textColor="@color/colorAccent" />
+
+                <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                    style="@style/Base.TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Online Payment" />
+            </TableRow>
+
+
+            <TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_span="2"
+                    android:background="@color/colorGrey" />
+            </TableRow>
+
+            <TableRow
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:onClick="payPaytm">
+
+
+                <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewFontAwesome
+                    style="@style/Base.TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/activity_vertical_margin"
+                    android:text="@string/icon_paytm"
+                    android:textColor="@color/colorAccent" />
+
+                <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                    style="@style/Base.TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Paytm" />
+            </TableRow>
+
+            <TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_span="2"
+                    android:background="@color/colorGrey" />
+            </TableRow>
+
+
+            <TableRow
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:onClick="payCash">
+
+                <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewFontAwesome
+                    style="@style/Base.TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/activity_vertical_margin"
+                    android:text="@string/icon_rupee"
+                    android:textColor="@color/colorAccent" />
+
+                <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                    style="@style/Base.TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Pay Cash" />
+
+            </TableRow>
+
+
+        </TableLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

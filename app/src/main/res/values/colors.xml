@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1fb272</color>
+    <color name="colorPrimaryDark">#198e5b</color>
+    <color name="colorAccent">#1fb272</color>
+    <color name="colorAccentDark">#198e5b</color>
+    <color name="colorGreen">#1fb272</color>
+    <color name="colorGreenShadow">#151fb272</color>
+    <color name="colorRed">#d90e22</color>
+    <color name="tab_background_selected">#057245</color>
+    <color name="tab_background_unselected">#1fb272</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGrey">#efefef</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorDarkGrey">#65000000</color>
+    <color name="colorForground">#fff</color>
+    <color name="textTitleColor">#d8000000</color>
+    <color name="activity_background">#f3e7e6e6</color>
+    <color name="focus_color">#d6f1f1f1</color>
+</resources>
+

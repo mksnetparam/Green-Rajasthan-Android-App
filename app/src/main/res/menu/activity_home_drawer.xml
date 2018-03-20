@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home/घर" />
+    </group>
+
+  <!--  <group
+        android:id="@+id/Gh"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cantact"
+            android:icon="@drawable/ic_call_black_24dp"
+            android:title="Contact Us/संपर्क करे" />
+    </group>-->
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_rating"
+            android:icon="@drawable/ic_star_border_white_24dp"
+            android:title="Rate us/हमे रेटिंग दे" />
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_Share"
+            android:icon="@drawable/ic_share_white_24dp"
+            android:title="Your वृक्ष मित्र referral code" />
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_layout"
+            android:icon="@drawable/ic_power_settings_new_white_24dp"
+            android:title="Logout/लोग आऊट " />
+    </group>
+</menu>

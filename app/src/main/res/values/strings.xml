@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Green Rajasthan</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="centers"><u>Centers</u></string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="msg_sit_back">Sit back &amp; Relax! while we automatic detect OTP( Enter the OTP below in case if we fail to detect the OTP automatically )</string>
+
+    <string name="welcome_hindi">ग्रीन भारत मिशन में आप का स्वागत है|</string>
+    <string name="welcome">ग्रीन भारत एक सामाजिक स्टार्टअप है जो पर्यावरण संरक्षण व रोज़गार पर केन्द्रित है इस प्रोजेक्ट का मुख्य उद्देश्य जिन लोगो के पास पेड़ लगाने के लिए जमीन अथवा देखभाल के लिए समय नहीं है वे लोग ग्रीन भारत मोबाइल एप्प से घर बैठे ऑनलाइन प्लांट आर्डर कर , चाहे जितने पेड़ लगा सकते है और जब चाहे तब पेड़ का विकास(ग्रोथ) एवं उसकी लोकेशन देख सकते है | साथ ही वे किसान जिनके पास जमीन है व पेड़ लगाने के इच्छुक है उनको निशुल्क पेड़ एवं पेड़ लगाने से लेकर सक्षम होने तक कुछ आर्थिक सहयोग मिलता रहेगा | साथ ही पेड़ एवं उसके उत्पाद पर किसान का अधिकार रहेगा | इससे किसानो को आर्थिक सहयोग के साथ रोजगार भी मिल सकेगा एवं साथ ही आने वाली पीढ़ियों के लिए स्वच्छ वातावरण तैयार हो सकेगा | हर उस व्यक्ति की पेड़ लगाने की जिमेदारी है जो बाइक, स्कूटर, कार अथवा अन्य किसी उद्योग के द्वारा प्रदूषण फैलाता है | आप ग्रीन भारत मिशन से जुड़कर प्रकृति के प्रति अपना अमूल्य योगदान दे व वृक्ष मित्र बनकर अतिरिक्त आय भी प्राप्त कर सकते है | अतः आप से निवेदन है की इस मोबाइल एप्प को देश के हर नागरिक के साथ शेयर करें |
+    </string>
+
+    <string name="title_activity_search_plant">Search_plant/पेडो की खोज </string>
+    <string name="plant_description">This plant is enrich with many medical and other features and very good for nature. This plant is enrich with many medical and other features and very good for nature.
+</string>
+
+    <string name="soil_type">Soil Type : </string>
+
+    <string name="how_many_plant"><b>How many plants you want to grow?</b>\nआप कितने पेड़ लगायेंगे?</string>
+
+    <string name="resent_otp">Resend OTP/दुबारा ओ.टी.पी.भेजे </string>
+    <string name="amount"><b>Amount</b>/खर्चा </string>
+    <string name="plan_features"><b>Features</b>/विशेषताएं</string>
+    <string name="contribution"><b>Contribution</b></string>
+    <string name="rule"><b><u>नियम शर्ते एवम् निर्देश</u></b></string>
+    <string name="text_plant_mode"><b>Select payment mode/</b>भुगतान का प्रकार चुने</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="growth_plant_text">Your plant is going very well and reached to a decent height.</string>
+
+    <string name="api_key">AIzaSyBlmg7ZTcl91vj-HaXoIVJOVkvebMSqU08</string>
+
+    <string name="facebook_app_id">1935193696756020</string>
+    <string name="fb_login_protocol_scheme">fb1935193696756020</string>
+    <string name="title_activity_nature_lover">NatureLoverActivity</string>
+
+</resources>

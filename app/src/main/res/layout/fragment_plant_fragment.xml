@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#faf9f9">
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+            android:paddingTop="@dimen/activity_padding"
+            android:paddingLeft="@dimen/activity_padding"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content"
+            android:text="@string/soil_type"/>
+
+        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+            android:id="@+id/soil_type"
+            android:paddingTop="@dimen/activity_padding"
+            android:paddingLeft="@dimen/activity_padding"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+            android:paddingTop="@dimen/activity_padding"
+            android:paddingLeft="@dimen/activity_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:text="Max. Height : "/>
+
+        <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+            android:id="@+id/max_height_textView"
+            android:paddingTop="@dimen/activity_padding"
+            android:paddingLeft="@dimen/activity_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/activity_horizontal_margin"/>
+
+    </LinearLayout>
+
+</LinearLayout>

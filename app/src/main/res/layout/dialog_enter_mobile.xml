@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile Number Varification"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/activity_vertical_margin"
+        android:textColor="@color/colorWhite"
+        style="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mobile Number"
+        android:id="@+id/mobile_editText"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter OTP"
+        android:visibility="gone"
+        android:id="@+id/otp_editText"
+        android:textColor="@color/colorBlack"
+        android:layout_margin="@dimen/activity_vertical_margin"/>
+
+    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:id="@+id/textViewResend"
+        android:visibility="gone"
+        android:background="@drawable/background_selector"
+        android:text="Resend OTP"/>
+
+
+    <Button
+        android:id="@+id/button_opt_dialog"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:text="Next" />
+
+
+</LinearLayout>

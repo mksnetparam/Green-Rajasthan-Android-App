@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "152043285907",
+    "firebase_url": "https://greenrajasthan-4c87c.firebaseio.com",
+    "project_id": "greenrajasthan-4c87c",
+    "storage_bucket": "greenrajasthan-4c87c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152043285907:android:8a3e522fe216d4cd",
+        "android_client_info": {
+          "package_name": "ntpl.com.greenrajasthan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "152043285907-7jtnml6j54u4jcdvi32uni48a5rm8aev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyRo_0yo2N1soic9kgrCABEonv0F0XzbI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

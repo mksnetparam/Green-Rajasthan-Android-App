@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:scrollbars="none">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:elevation="20dp"
+                card_view:contentPadding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:id="@+id/plant_image"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/activity_spacing"
+                        android:layout_weight="5"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/plant" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="center_horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                                android:id="@+id/text_plant_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Neem Plant"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="25dp" />
+
+                            <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Care Taker"
+                                android:textColor="@color/textTitleColor" />
+
+                            <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                                android:id="@+id/text_care_taker_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mr. Ramlal Saini" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_spacing"
+                android:weightSum="10">
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="5"
+                    android:background="@drawable/back_accent_color_selector"
+                    android:drawableRight="@drawable/picc"
+                    android:onClick="viewPictures"
+                    android:padding="3dp"
+                    android:text="View Pictures"
+                    android:textColor="@color/colorWhite" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="5"
+                    android:background="@drawable/back_accent_color_selector"
+                    android:drawableRight="@drawable/playy"
+                    android:onClick="viewVideos"
+                    android:padding="3dp"
+                    android:text="View Video"
+                    android:textColor="@color/colorWhite" />
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:elevation="20dp"
+                card_view:contentPadding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Plantation Date"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp" />
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:id="@+id/text_view_plantation_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Rs 200" />
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last Progress Update On"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp" />
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:id="@+id/text_view_last_capture_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Monthy" />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:elevation="20dp"
+                card_view:contentPadding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Land Details"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20dp" />
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:id="@+id/text_view_land_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/growth_plant_text" />
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:elevation="20dp"
+                android:visibility="gone"
+                card_view:contentPadding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <greenbharat.cdac.com.greenbharat.customfonts.MyTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comment &amp; Review"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="5dp"
+                        android:background="@color/colorGrey"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:hint="Enter your Comment/ Reviews"
+                        android:lines="3"
+                        android:maxLines="3" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="5dp"
+                        android:background="@color/colorGrey"/>
+
+
+                    <greenbharat.cdac.com.greenbharat.fancybuttons.FancyButton
+                        xmlns:fancy="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/button_alloted_trees"
+                        android:layout_gravity="end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/activity_padding"
+                        fancy:fb_defaultColor="@color/colorPrimary"
+                        fancy:fb_focusColor="@color/focus_color"
+                        fancy:fb_fontIconResource="@string/icon_hand_right"
+                        fancy:fb_text="Submit"
+                        fancy:fb_textColor="@color/colorWhite" />
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>
